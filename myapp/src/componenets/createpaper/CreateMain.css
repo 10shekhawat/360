@@ -20,3 +20,87 @@
     font-weight: 500;
     color: #000;
 }
+.input{
+    color: #000;
+    font-family: Archivo;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+}
+.inputbutton{
+    border-radius: 5px;
+background: #F1F1F1;
+width: 5ch;
+}
+.inputbtn{
+    border-radius: 5px;
+    background: #F1F1F1;
+    width: 12ch; 
+}
+.addbtn{
+    border-radius: 5px;
+    background: #EDF7FF;
+    color: #3774A5;
+    padding: 10px 24px;
+    font-family: Archivo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    border: 0;
+}
+.sectionadd{
+    color: #000;
+
+text-align: center;
+font-family: Archivo;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+}
+.out{
+    border-radius: 5px;
+    border: 1px solid #E5E5E5;
+    background: #FFF;
+}
+.section-name{
+    color: #999;
+/* border: 1px solid green; */
+text-align: center;
+font-family: Archivo;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+/* height: 30vh; */
+margin: auto;
+}
+.border{
+    border-radius: 20px 20px 0px 0px;
+background: #FFF;
+}
+.addsecbtn{
+    color: #3774A5;
+background-color: #EDF7FF;
+text-align: center;
+font-family: Archivo;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+border: 0;
+}
+.min-plusbtn{
+    border-radius: 5px;
+border: 1px solid #DDD;
+ /* border: 1px solid blue; */
+ margin: 1px;
+ padding: 10px;
+background: #FFF;
+}
+.head{
+    color: #000;
+
+font-family: Archivo;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+}
+

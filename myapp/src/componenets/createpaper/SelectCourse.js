@@ -7,6 +7,15 @@ const options = [
     { value: 'Rajasthan Board of Secondary Education', label: 'Rajasthan Board of Secondary Education' },
     { value: 'Punjab Board of Secondary Education', label: 'Punjab Board of Secondary Education' },
     { value: 'Uttarpradesh Board of Secondary Education', label: 'Uttarpradesh Board of Secondary Education' },
+    { value: 'Uttarpradesh Board of Secondary Education', label: 'Uttarpradesh Board of Secondary Education' },
+    { value: 'Uttarpradesh Board of Secondary Education', label: 'Uttarpradesh Board of Secondary Education' },
+    { value: 'Uttarpradesh Board of Secondary Education', label: 'Uttarpradesh Board of Secondary Education' },
+    { value: 'Uttarpradesh Board of Secondary Education', label: 'Uttarpradesh Board of Secondary Education' },
+    { value: 'Uttarpradesh Board of Secondary Education', label: 'Uttarpradesh Board of Secondary Education' },
+    { value: 'Uttarpradesh Board of Secondary Education', label: 'Uttarpradesh Board of Secondary Education' },
+    { value: 'Uttarpradesh Board of Secondary Education', label: 'Uttarpradesh Board of Secondary Education' },
+    { value: 'Uttarpradesh Board of Secondary Education', label: 'Uttarpradesh Board of Secondary Education' },
+    { value: 'Uttarpradesh Board of Secondary Education', label: 'Uttarpradesh Board of Secondary Education' },
 ];
 
 const SelectCourse = () => {
@@ -22,6 +31,7 @@ const SelectCourse = () => {
                             defaultValue={selectedOption}
                             onChange={setSelectedOption}
                             options={options}
+                            styles={{overflowY: "scroll",}}
                         />
                     </div>
                 </div>

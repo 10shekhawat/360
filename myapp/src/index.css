@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Shift the placeholder text to the left for the specific input */
+#myInput::placeholder {
+  text-align: left;
+}
