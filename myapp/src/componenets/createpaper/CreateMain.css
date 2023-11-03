@@ -103,4 +103,21 @@ font-size: 20px;
 font-style: normal;
 font-weight: 500;
 }
+.nop{
+    color: #565656;
+
+font-family: Archivo;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+}
+.tc{
+    color: #565656;
+
+font-family: Archivo;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+padding-top: 15px;
+}
 
