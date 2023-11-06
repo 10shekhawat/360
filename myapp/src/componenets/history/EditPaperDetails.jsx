@@ -26,9 +26,9 @@ const EditPaperDetails = () => {
           >
             <div className="col-2">
               <img
-                onClick={() => Navigate("/Topics")}
                 src={backButton}
                 alt="back"
+                onClick={()=>{Navigate('/Topics')}}
               />
             </div>
             <div className="col-8 text-center">
@@ -86,7 +86,7 @@ const EditPaperDetails = () => {
               Choose the assignment to Edit
             </h1>
               <div className="col-12" >
-                  <div className="card p-3 " style={{border:"1px solid #000"}} >
+                  <div className="card p-3 " style={{border:"1px solid #000"}} onClick={()=>{Navigate("/Question")}} >
                     <p className="mb-0 text-center" style={{color:"#000",fontSize:"0.875rem",fontStyle:"normal",fontFamily:"Archivo",fontWeight:400}} >Question Composition</p>
                     <p className="mb-0 text-center" style={{color:"#FF0707",fontSize:"0.75rem",fontStyle:"normal",fontFamily:"Archivo",fontWeight:400}} >Create or modify Settings of Questions Types</p>
                   </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 const data=[
   {
     heading:"Central Board of Secondary Education"
@@ -13,48 +13,24 @@ const data=[
 ]
 
 const HomeData = () => {
+  const Navigate=useNavigate()
   return (
     <>
-      <div className='container mt-2' >
-        <div className='row'>
-          <div className='col-12'>
-            <NavLink to='/CreatePaper' style={{ textDecoration: "none", color: "black" }}>
-              <div>
-                <div className='w-100 card border-0 p-2 ' style={{ backgroundColor: "#FAFFC3", borderRadius: "10px" }}>
-                  <h1 className='homeCardHeading'>Create New<br />Question Paper </h1>
+    <div className="container">
+    <div className="row row-gap-4 mt-3">
 
-                  <div style={{ height: "5vh", width: "100%", display: "flex", alignItems: "center", gap: "8px" }}>
-                    <div style={{ backgroundColor: "#DEE94B", borderRadius: "70%", padding: "9px" }}></div>
-                    <div style={{ backgroundColor: "#DEE94B", borderRadius: "70%", padding: "9px" }}></div>
-                    <div style={{ backgroundColor: "#DEE94B", borderRadius: "70%", padding: "9px" }}></div>
-                    <div style={{ backgroundColor: "#DEE94B", borderRadius: "70%", padding: "9px" }}></div>
-                    <div style={{ backgroundColor: "#DEE94B", borderRadius: "70%", padding: "9px" }}></div>
-                  </div>
-
-                </div>
-              </div>
-            </NavLink>
-          </div>
+      <div className="col-12" onClick={()=>{Navigate('/CreatePaper')}} >
+        <div className="card bannerCard1" >
+            <h1>Create New <br/> Question Paper</h1>
         </div>
       </div>
-
-      <div className='container'>
-        <div className='row'>
-          <div className='col-12'>
-            <div className='w-100 card mt-3 border-0 p-2' style={{ backgroundColor: "#EEFFDD",  borderRadius: "10px" }}>
-              <h1 className='homeCardHeading'>Check my<br />Previous Papers </h1>
-              <div style={{ height: "5vh", width: "100%", display: "flex", alignItems: "center", gap: "8px" }}>
-                <div style={{ backgroundColor: "#CDFFC5", borderRadius: "70%", padding: "9px" }}></div>
-                <div style={{ backgroundColor: "#CDFFC5", borderRadius: "70%", padding: "9px" }}></div>
-                <div style={{ backgroundColor: "#CDFFC5", borderRadius: "70%", padding: "9px" }}></div>
-                <div style={{ backgroundColor: "#CDFFC5", borderRadius: "70%", padding: "9px" }}></div>
-                <div style={{ backgroundColor: "#CDFFC5", borderRadius: "70%", padding: "9px" }}></div>
-              </div>
-            </div>
-          </div>
+      <div className="col-12" >
+        <div className="card bannerCard2" >
+            <h1>Check My <br/> Previous Papers</h1>
         </div>
-
       </div>
+    </div>
+  </div>
 
       <div className='container'>
       <div className='row'>

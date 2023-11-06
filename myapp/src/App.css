@@ -94,3 +94,28 @@ accordion-button:not(.collapsed) {
     box-shadow: none !important;
     background-color: transparent !important;
 }
+.bannerCard1{
+    background-color: #FAFFC3;
+    background-image: url('../src/componenets/assets/bannerSide1.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding: 1rem;
+    border: none;
+    border-radius: 20px;
+}
+
+.bannerCard2{
+    background-color: #EEFFDD;
+    background-image: url('../src/componenets/assets/bannerSide2.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding: 1rem;
+    border: none;
+    border-radius: 20px;
+}
+.bannerCard1 h1,.bannerCard2 h1,.same{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+    
+}
