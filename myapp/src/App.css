@@ -1,0 +1,96 @@
+.homeCardHeading{
+    color: #000;
+
+font-family: Archivo;
+font-size: 2rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.homeDataMedium{
+    color: #000;
+
+font-family: Archivo;
+font-size:1.2rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.mediumCardHeading{
+color: #000;
+
+font-family: Archivo;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.bottomOnCurrentPage{
+    background-color: #EDF7FF;
+    border-radius: 1rem;
+}
+.bottomOnCurrentPage span{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #3774A5;
+}
+.bottomOnAnotherPage {
+    background-color: #F6F6F6;
+    border-radius: 1rem;
+    width: 50%;
+}
+.logoutButton button{
+    background-color: #FFEFEF;
+    left: 10%;
+    bottom: 5%;
+    color: #FF2525;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.menuItems span{
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.menuOffcanvasUserDetailsMain{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.menuOffcanvasUserDetailsMain div{
+    line-height: 0px;
+}
+.menuOffcanvasUserDetailsMain h6{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #000;
+}
+.menuOffcanvasUserDetailsMain span{
+    font-size: 0.875rem;
+    color: #686868;
+    font-weight: 300;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
