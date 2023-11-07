@@ -1,6 +1,8 @@
 import React from 'react'
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const CreatedSuccessfully = () => {
+  const Navigate = useNavigate();
   const data = [
     {
       name: 'Name of Paper',
@@ -78,7 +80,7 @@ const CreatedSuccessfully = () => {
           <div className='container h-100' >
             <div className='row align-items-center justify-content-center h-100' >
               <div className='col-12'>
-                <button className='nextButtonClass w-100 p-3 mx-auto text-center' >View Paper Details</button>
+                <button onClick={()=>Navigate("/ViewPaperDetails")} className='nextButtonClass w-100 p-3 mx-auto text-center' >View Paper Details</button>
               </div>
 
             </div>

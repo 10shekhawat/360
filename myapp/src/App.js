@@ -22,6 +22,7 @@ function App() {
       <Route path="/EditPaperDetails" element={<EditPaperDetails/>} />
       <Route path="/QuestionComposition" element={<QuestionComposition/>} />
       <Route path="/SectionComposition" element={<SectionComposition/>} />
+      <Route path="/CreatedSuccessfully" element={<CreatedSuccessfully/>} />
      
     </Routes>
   );
