@@ -14,9 +14,12 @@ import Modal from 'react-bootstrap/Modal';
 import CreateSections from './CreateSections';
 import SetAndExam from './SetAndExam';
 import FinalSemExam from './FinalSemExam';
+import { useNavigate } from 'react-router-dom';
 
 const CreateMain = () => {
 
+
+  const Navigate = useNavigate();
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -62,7 +65,7 @@ const CreateMain = () => {
 
             </div>
             </div>
-            <div style={{height:"70%",overflowY:"auto",}} >
+            <div style={{height:"60%",overflowY:"auto",}} >
                 {progressState===1 && <SelectBoard/>}
                 {progressState===2 && <SelectCourse/>}
                 {progressState===3 && <SelectTopic/>}
@@ -74,8 +77,25 @@ const CreateMain = () => {
                 {progressState===9 && <SetAndExam/>}
                 {progressState===10 && <FinalSemExam/>}
             </div>
-            <div style={{height:"10%",}} >
+            <div style={{height:"20%",}} >
+              {
+                progressState!==10?
+                <>
                 <BottomButton updateProgressState={updateProgressState} />
+                </>:
+                <>
+                  <div className='container h-100' >
+                <div className='row align-items-center justify-content-center  h-100' >
+                    <div className='col-12'>  
+                            <button onClick={()=>{Navigate('/CreatedSuccessfully')}} className='nextButtonClass w-100 p-3 mx-auto text-center' >Create Paper</button>
+                    </div>
+
+                </div>
+
+            </div>
+                </>
+              }
+                
             </div>
 
         </div>
@@ -85,20 +105,29 @@ const CreateMain = () => {
         onHide={handleClose}
         backdrop="static"
         keyboard={false}
+        centered
       >
-        <Modal.Header closeButton>
-          <Modal.Title>Modal title</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          I will not close if you click outside me. Don not even try to press
-          escape key.
-        </Modal.Body>
-        <Modal.Footer>
+       <div className='outline' style={{display:"flex" ,height:"25vh",flexDirection:"column",justifyContent:"center"}}>
+        <div >
+        <div className=''>
+         <h1 className='sets' style={{border:"0"}}>Stop Creating Paper</h1>
+            <h1 className='action'>The action cannot be reversed</h1>
+         </div>
+           <div className='d-flex justify-content-center'>
+           <button className='cancel ' onClick={handleClose}>Cancel</button>
+          
+           </div>
+           <div className='d-flex justify-content-center mt-2'>
+           <button className='ahead'  onClick={()=>{Navigate('/')}}>Process Ahead</button>
+           </div>
+        </div>
+       </div>
+      
+        {/* <Modal.Footer>
           <button variant="secondary" onClick={handleClose}>
             Close
           </button>
-          <button variant="primary">Understood</button>
-        </Modal.Footer>
+        </Modal.Footer> */}
       </Modal>
     </>
   )

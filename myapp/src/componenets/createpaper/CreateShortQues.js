@@ -49,14 +49,14 @@ const CreateShortQues = () => {
           </div>
             <div className='col-12' style={{display:"flex", gap:"1rem"}}>
               <div>
-                <h1 className='createPaperHeading'>MPQ</h1>
+                <h1 className='createPaperHeading' style={{border:"0"}}>MPQ</h1>
                 <input
                     className='inputbutton'
                     type='number'
                   />
               </div>
               <div>
-                <h1 className='createPaperHeading'>Compulsory</h1>
+                <h1 className='createPaperHeading' style={{border:"0"}}>Compulsory</h1>
                 <input
                     className='inputbtn'
                     type='number'

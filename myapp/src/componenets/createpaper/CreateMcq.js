@@ -41,6 +41,8 @@ const CreateMcq = () => {
                     id={subject.id}
                     value={subjectData[subject.id] || ''}
                     onChange={handleInputChange}
+                    style={{border:"0"}}
+                    
                   />
                 </div>
               ))}
@@ -53,6 +55,7 @@ const CreateMcq = () => {
                 <input
                     className='inputbutton'
                     type='number'
+                    style={{border:"0"}}
                   />
               </div>
               <div>
@@ -60,6 +63,7 @@ const CreateMcq = () => {
                 <input
                     className='inputbtn'
                     type='number'
+                    style={{border:"0"}}
                   />
               </div>
 
