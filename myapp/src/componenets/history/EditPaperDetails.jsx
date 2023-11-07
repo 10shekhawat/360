@@ -15,6 +15,7 @@ const EditPaperDetails = () => {
   const [show1, setShow1] = useState(false);
   const handleClose1 = () => setShow1(false);
   const handleShow1 = () => setShow1(true);
+
   const Navigate = useNavigate();
   return (
     <>
@@ -26,9 +27,9 @@ const EditPaperDetails = () => {
           >
             <div className="col-2">
               <img
+                onClick={() => Navigate("/Topics")}
                 src={backButton}
                 alt="back"
-                onClick={()=>{Navigate('/Topics')}}
               />
             </div>
             <div className="col-8 text-center">
@@ -86,33 +87,33 @@ const EditPaperDetails = () => {
               Choose the assignment to Edit
             </h1>
               <div className="col-12" >
-                  <div className="card p-3 " style={{border:"1px solid #000"}} onClick={()=>{Navigate("/Question")}} >
+                  <div className="card p-3 " onClick={()=>{Navigate('/QuestionComposition')}} style={{border:"1px solid #000"}} >
                     <p className="mb-0 text-center" style={{color:"#000",fontSize:"0.875rem",fontStyle:"normal",fontFamily:"Archivo",fontWeight:400}} >Question Composition</p>
                     <p className="mb-0 text-center" style={{color:"#FF0707",fontSize:"0.75rem",fontStyle:"normal",fontFamily:"Archivo",fontWeight:400}} >Create or modify Settings of Questions Types</p>
                   </div>
                 </div>
               <div className="col-12" >
-                  <div className="card p-3" style={{border:"1px solid #000"}} >
-                    <p className="mb-0 text-center" style={{color:"#000",fontSize:"0.875rem",fontStyle:"normal",fontFamily:"Archivo",fontWeight:400}} >Question Composition</p>
-                    <p className="mb-0 text-center" style={{color:"#FF0707",fontSize:"0.75rem",fontStyle:"normal",fontFamily:"Archivo",fontWeight:400}} >Create or modify Settings of Questions Types</p>
+                  <div className="card p-3" onClick={()=>Navigate('/SectionComposition')} style={{border:"1px solid #000"}} >
+                    <p className="mb-0 text-center" style={{color:"#000",fontSize:"0.875rem",fontStyle:"normal",fontFamily:"Archivo",fontWeight:400}} >Section Composition</p>
+                    <p className="mb-0 text-center" style={{color:"#FF0707",fontSize:"0.75rem",fontStyle:"normal",fontFamily:"Archivo",fontWeight:400}} >Create or modify Settings of Section</p>
                   </div>
                 </div>
               <div className="col-12" >
                   <div className="card p-3" style={{border:"1px solid #000"}} >
-                    <p className="mb-0 text-center" style={{color:"#000",fontSize:"0.875rem",fontStyle:"normal",fontFamily:"Archivo",fontWeight:400}} >Question Composition</p>
-                    <p className="mb-0 text-center" style={{color:"#FF0707",fontSize:"0.75rem",fontStyle:"normal",fontFamily:"Archivo",fontWeight:400}} >Create or modify Settings of Questions Types</p>
+                    <p className="mb-0 text-center" style={{color:"#000",fontSize:"0.875rem",fontStyle:"normal",fontFamily:"Archivo",fontWeight:400}} >Self Composition</p>
+                    <p className="mb-0 text-center" style={{color:"#FF0707",fontSize:"0.75rem",fontStyle:"normal",fontFamily:"Archivo",fontWeight:400}} >Create or delete number of sets</p>
                   </div>
                 </div>
               <div className="col-12" >
                   <div onClick={()=>{handleShow1()}} className="card p-3" style={{border:"1px solid #000"}} >
-                    <p className="mb-0 text-center" style={{color:"#000",fontSize:"0.875rem",fontStyle:"normal",fontFamily:"Archivo",fontWeight:400}} >Question Composition</p>
-                    <p className="mb-0 text-center" style={{color:"#FF0707",fontSize:"0.75rem",fontStyle:"normal",fontFamily:"Archivo",fontWeight:400}} >Create or modify Settings of Questions Types</p>
+                    <p className="mb-0 text-center" style={{color:"#000",fontSize:"0.875rem",fontStyle:"normal",fontFamily:"Archivo",fontWeight:400}} >Topics Composition</p>
+                    <p className="mb-0 text-center" style={{color:"#FF0707",fontSize:"0.75rem",fontStyle:"normal",fontFamily:"Archivo",fontWeight:400}} >By Doing this, entire paper will reset to blank and you will required to create a new paper from scratch</p>
                   </div>
                 </div>
               <div className="col-12" >
                   <div className="card p-3  " style={{border:"1px solid #000"}} >
-                    <p className="mb-0 text-center" style={{color:"#000",fontSize:"0.875rem",fontStyle:"normal",fontFamily:"Archivo",fontWeight:400}} >Question Composition</p>
-                    <p className="mb-0 text-center" style={{color:"#FF0707",fontSize:"0.75rem",fontStyle:"normal",fontFamily:"Archivo",fontWeight:400}} >Create or modify Settings of Questions Types</p>
+                    <p className="mb-0 text-center" style={{color:"#000",fontSize:"0.875rem",fontStyle:"normal",fontFamily:"Archivo",fontWeight:400}} >Duplicate Paper composition for another Course</p>
+                    <p className="mb-0 text-center" style={{color:"#FF0707",fontSize:"0.75rem",fontStyle:"normal",fontFamily:"Archivo",fontWeight:400}} >Copy this composition and use to create another paper</p>
                   </div>
                 </div>
           </div>

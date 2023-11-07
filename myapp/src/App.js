@@ -8,6 +8,7 @@ import Topics from './componenets/topics/Topics';
 import ViewPaperDetails from './componenets/history/ViewPaperDetails';
 import EditPaperDetails from './componenets/history/EditPaperDetails';
 import QuestionComposition from './componenets/history/QuestionComposition';
+import SectionComposition from './componenets/history/SectionComposition';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       <Route path="/Topics" element={<Topics/>} />
       <Route path="/ViewPaperDetails" element={<ViewPaperDetails/>} />
       <Route path="/EditPaperDetails" element={<EditPaperDetails/>} />
-      <Route path="/Question" element={<QuestionComposition/>} />
+      <Route path="/QuestionComposition" element={<QuestionComposition/>} />
+      <Route path="/SectionComposition" element={<SectionComposition/>} />
      
     </Routes>
   );
