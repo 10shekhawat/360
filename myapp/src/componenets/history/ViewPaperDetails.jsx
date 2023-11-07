@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import backButton from "../assets/backButton.svg";
 import { useNavigate } from "react-router-dom";
 import Accordion from "react-bootstrap/Accordion";
@@ -96,6 +96,7 @@ const setsData = [
 ]
 
 const ViewPaperDetails = () => {
+  const [activeKey, setActiveKey] = useState(null);
   const Navigate = useNavigate();
   return (
     <>
@@ -171,7 +172,7 @@ const ViewPaperDetails = () => {
           </div>
 
           <div className="col-12 pt-0 mt-0">
-            <Accordion defaultActiveKey="0">
+            <Accordion activeKey={activeKey} onSelect={(key) => setActiveKey(key)}>
               {topicsData.map((topic, index) => (
                 <Accordion.Item key={index} eventKey={index.toString()}>
                   <Accordion.Header>
