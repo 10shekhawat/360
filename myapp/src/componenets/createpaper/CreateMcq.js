@@ -49,7 +49,7 @@ const CreateMcq = () => {
             </div>
 
           </div>
-            <div className='col-12' style={{display:"flex", gap:"1rem"}}>
+            <div className='col-12' style={{display:"flex", gap:"1rem"}}> 
               <div>
                 <h1 className='createPaperHeading'>MPQ</h1>
                 <input

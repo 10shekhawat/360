@@ -65,13 +65,14 @@ font-weight: 600;
 .section-name{
     color: #999;
 /* border: 1px solid green; */
-text-align: center;
+/* text-align: center; */
 font-family: Archivo;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
 /* height: 30vh; */
-margin: auto;
+margin: 10px;
+
 }
 .border{
     border-radius: 20px 20px 0px 0px;

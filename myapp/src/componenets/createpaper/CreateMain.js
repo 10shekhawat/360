@@ -107,7 +107,7 @@ const CreateMain = () => {
         keyboard={false}
         centered
       >
-       <div className='outline' style={{display:"flex" ,height:"25vh",flexDirection:"column",justifyContent:"center"}}>
+       <div className='outline' style={{display:"flex" ,height:"30vh",flexDirection:"column",justifyContent:"center"}}>
         <div >
         <div className=''>
          <h1 className='sets' style={{border:"0"}}>Stop Creating Paper</h1>

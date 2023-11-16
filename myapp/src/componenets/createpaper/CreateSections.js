@@ -4,18 +4,10 @@ import Select from 'react-select';
 
 
 const options = [
-    { value: 'Central Board of Secondary Education', label: 'Central Board of Secondary Education' },
-    { value: 'Rajasthan Board of Secondary Education', label: 'Rajasthan Board of Secondary Education' },
-    { value: 'Punjab Board of Secondary Education', label: 'Punjab Board of Secondary Education' },
-    { value: 'Uttarpradesh Board of Secondary Education', label: 'Uttarpradesh Board of Secondary Education' },
-    { value: 'Uttarpradesh Board of Secondary Education', label: 'Uttarpradesh Board of Secondary Education' },
-    { value: 'Uttarpradesh Board of Secondary Education', label: 'Uttarpradesh Board of Secondary Education' },
-    { value: 'Uttarpradesh Board of Secondary Education', label: 'Uttarpradesh Board of Secondary Education' },
-    { value: 'Uttarpradesh Board of Secondary Education', label: 'Uttarpradesh Board of Secondary Education' },
-    { value: 'Uttarpradesh Board of Secondary Education', label: 'Uttarpradesh Board of Secondary Education' },
-    { value: 'Uttarpradesh Board of Secondary Education', label: 'Uttarpradesh Board of Secondary Education' },
-    { value: 'Uttarpradesh Board of Secondary Education', label: 'Uttarpradesh Board of Secondary Education' },
-    { value: 'Uttarpradesh Board of Secondary Education', label: 'Uttarpradesh Board of Secondary Education' },
+    { value: 'MCQ questions', label: 'MCQ questions' },
+    { value: 'Short questions', label: 'Short questions' },
+    { value: 'Long questions', label: 'Long questions' },
+    { value: 'Fill in the blanks questions', label: 'Fill in the blanks questions' },
 ];
 const CreateSections = () => {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -135,7 +127,7 @@ const CreateSections = () => {
         </div>
 
       </div>
-<Offcanvas className='border' show={show} onHide={handleClose} placement='bottom' style={{ height: "50%", }} backdrop="static">
+<Offcanvas className='border ' show={show} onHide={handleClose} placement='bottom' style={{ height: "50%",}} backdrop="static">
         <Offcanvas.Header className='w-100  d-flex align-items-start justify-content-center'>
           <div onClick={handleClose} style={{ height: "2px", backgroundColor: "grey", width: "50px" }}></div>
         </Offcanvas.Header>
@@ -150,19 +142,15 @@ const CreateSections = () => {
          <div className='pt-3'>
          <input placeholder='Enter Section Name' type='text' className='w-100 p-3 ' style={{border: '1px solid #E5E5E5'}} ></input>
          </div>
-           <div className='pt-5 pb-2'>
-          
-           <Select
-              defaultValue={selectedOption}
-              onChange={setSelectedOption}
-              options={options}
-              styles={{overflowY: "scroll",}}
-              placeholder="Select Section Type"
-          />
-          
-
-
-           </div>
+         <div className='pt-3 ' style={{ width: '100%' }}>
+      <Select
+        value={selectedOption}
+        onChange={setSelectedOption}
+        options={options}
+        styles={{overflowY:"auto"}}
+        placeholder="Select Question Type"
+      />
+    </div>
 
           </div>
           <div className='mt-5 lastbtnoutline'>
